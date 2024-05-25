@@ -13,7 +13,6 @@ return new class extends Migration
             $table->string('name', 50);
             $table->string('login', 20);
             $table->string('password', 20);
-            $table->timestamps();
         });
     }
 

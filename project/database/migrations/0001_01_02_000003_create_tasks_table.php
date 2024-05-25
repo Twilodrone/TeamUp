@@ -13,7 +13,6 @@ return new class extends Migration
             $table->text('title');
             $table->dateTime('date_start');
             $table->dateTime('date_end');
-            $table->timestamps();
         });
 
         Schema::table('tasks', function (Blueprint $table) {

@@ -14,7 +14,6 @@ return new class extends Migration
             $table->unsignedBigInteger('team_id');
             $table->unsignedBigInteger('employee_id');
             $table->boolean('completed');
-            $table->timestamps();
 
             $table->foreign('task_id')->references('task_id')->on('tasks');
             $table->foreign('team_id')->references('team_id')->on('teams');

@@ -13,7 +13,6 @@ return new class extends Migration
             $table->string('file_name', 30);
             $table->text('file_path');
             $table->unsignedBigInteger('team_id');
-            $table->timestamps();
 
             $table->foreign('team_id')->references('team_id')->on('teams');
         });

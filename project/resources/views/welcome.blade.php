@@ -9,6 +9,7 @@
         <h1>Добро пожаловать!</h1>
         <p>Пожалуйста, войдите в систему, чтобы продолжить.</p>
         <a href="{{ route('login') }}" class="btn btn-primary">Войти</a>
+        <a href="{{ route('register') }}" class="btn btn-secondary ml-2">Зарегистрироваться</a>
     </div>
 </body>
 </html>

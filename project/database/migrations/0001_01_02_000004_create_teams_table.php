@@ -11,7 +11,6 @@ return new class extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->bigIncrements('team_id');
             $table->text('storage_path');
-            $table->timestamps();
         });
 
         Schema::table('teams', function (Blueprint $table) {

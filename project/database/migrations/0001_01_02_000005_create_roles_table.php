@@ -15,7 +15,6 @@ return new class extends Migration
             $table->boolean('team_manipulate');
             $table->boolean('roots_manipulate');
             $table->boolean('creator');
-            $table->timestamps();
         });
     }
 

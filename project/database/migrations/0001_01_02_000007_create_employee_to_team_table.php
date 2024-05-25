@@ -13,7 +13,6 @@ return new class extends Migration
             $table->unsignedBigInteger('team_id');
             $table->unsignedBigInteger('employee_id');
             $table->unsignedBigInteger('role_id');
-            $table->timestamps();
 
             $table->foreign('team_id')->references('team_id')->on('teams');
             $table->foreign('employee_id')->references('employee_id')->on('employees');

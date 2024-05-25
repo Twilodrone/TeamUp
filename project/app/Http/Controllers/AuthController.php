@@ -23,7 +23,7 @@ class AuthController extends Controller
         $login = $request->input('login');
         $password = $request->input('password');
 
-        $user = DB::table('employee')
+        $user = DB::table('employees')
             ->where('login', $login)
             ->where('password', $password)
             ->first();
