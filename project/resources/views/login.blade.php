@@ -21,5 +21,11 @@
     </div>
 </form>
 
+@if ($errors->any())
+    <div>
+        <strong>Неверный логин или пароль. Попробуйте снова.</strong>
+    </div>
+@endif
+
 </body>
 </html>
