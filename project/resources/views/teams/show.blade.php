@@ -4,7 +4,7 @@
     <title>Команда {{ $team->name }}</title>
 </head>
 <body>
-
+@csrf
 <h2>Команда: {{ $team->name }}</h2>
 
 <h3>Участники</h3>

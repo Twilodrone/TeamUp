@@ -21,11 +21,13 @@ Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/menu/{employee_id}', [TeamsMenuController::class, 'index'])->name('menu');
 
+
+
 Route::get('/teams', [TeamController::class, 'index'])->name('teams.index');
 Route::get('/teams/{id}', [TeamController::class, 'show'])->name('teams.show');
 Route::get('/teams/{id}/download/{filename}', [TeamController::class, 'download'])->name('teams.download');
 Route::post('/teams/{id}/upload', [TeamController::class, 'upload'])->name('teams.upload');
-Route::delete('/teams/{id}/delete/{filename}', [TeamController::class, 'deleteFile'])->name('teams.deleteFile');
+Route::post('/teams/{id}/delete/{filename}', [TeamController::class, 'deleteFile'])->name('teams.deleteFile');
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,5 +35,4 @@ Route::get('/', function () {
 Route::post('/', function () {
     return view('welcome');
 });
-Route::post('/upload', [FileController::class, 'upload'])->name('upload');
 
